@@ -1,0 +1,160 @@
+@font-face {font-family: 'webfont';
+    src: url('../font/webfont.eot'); /* IE9*/
+    src: url('../font/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/webfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+.webfont{
+    font-family:"webfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+.container {
+	margin: auto;
+}
+
+.container .header {
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	background-color: #222;
+	text-align: center;
+}
+.header h1{
+	color:white
+}
+.container .body{
+	width: 80%;
+	margin:10px auto;
+}
+.body p{
+	font-size: 16px;
+}
+.sidebar {
+	position: relative;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 20%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.sidebtn {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: darkred;
+	transition: all 0.5s ease-out;
+}
+
+.openbtn{
+	transform: scale(50);
+}
+
+.line {
+	position: absolute;
+	right: 25px;
+	width: 20px;
+	height: 3px;
+	margin-top: 5px;
+	margin-left: 12px;
+	background-color: white;
+	transition: all 0.5s ease;
+}
+
+.line:nth-child(1) {
+	top: 30px;
+}
+
+.line:nth-child(2) {
+	top: 38px;
+}
+
+.line:nth-child(3) {
+	top: 46px;
+}
+
+.openline1 {
+	animation: openline1 2s forwards;
+}
+
+.openline2 {
+	animation: goout 0.5s ease forwards;
+	opacity: 0;
+	transition: opacity 0.5s;  
+}
+
+.openline3 {
+	animation: openline2 2s forwards;
+}
+@-webkit-keyframes openline1{
+	0%{
+		transform: translateY(11px);
+	}
+	50%{
+		transform: translateY(11px);
+	}
+	50%{
+		transform: rotate(45deg) translateY(11px);
+	}
+	100%{
+		transform: rotate(45deg) translateY(11px);
+	}
+}
+@-webkit-keyframes goout{
+	from{
+		transform: translateX(0px);
+	}
+	to{
+		transform: translateX(8px);
+	}
+}
+@-webkit-keyframes openline2{
+	0%{
+		transform: translateY(0px);
+	}
+	50%{
+		transform: translateY(-11px);
+	}
+	50%{
+		transform: rotate(-45deg) translateY(-11px);
+	}
+	100%{
+		transform: rotate(-45deg) translateY(-11px);
+	}
+}
+/*sidebar.menu*/
+
+.smenu {
+	visibility: hidden;
+	position: absolute;
+	top: 100px;
+	width: 85%;
+	padding-left: 10%;
+}
+
+.smenu a {
+	display: block;
+	width: 100%;
+	height: 50px;
+	margin-top: 10px;
+	line-height: 50px;
+	font-size: 14px;
+	color: white;
+	background-color: darkred;
+	border: 1px solid darkred;
+}
+
+.openmenu {
+	visibility: visible;
+	opacity: 1;
+	transition: all 0.5s ease-out;
+	transition-delay: 0.37s;
+}
