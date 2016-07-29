@@ -1,0 +1,17 @@
+.mcbtn{
+	width:100px;
+	height: 35px;
+}
+.opposite{
+	color: darkred;
+	background-color: transparent;
+	border: 1px solid darkred;
+	border-radius: 20px;
+	transition:all 0.3s cubic-bezier(0, 0, 0.05, 1);
+}
+
+.opposite:hover{
+	color:white;
+	background-color: darkred;
+	border: 1px solid darkred;
+}
