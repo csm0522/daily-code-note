@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>border知识梳理</title>
+	<style type="text/css">
+	div{
+		margin-top:10px;
+	}
+		.borders{
+			width:0px;height: 0px;
+			display: inline-block;
+			/*border: 20px solid white;*/
+			margin-left: 30px;
+		}
+		.border-all{
+			border-top: 20px solid red;
+			border-right: 20px solid green;
+			border-bottom: 20px solid yellow;
+			border-left: 20px solid blue;
+		}
+		.border-top{
+			border-top: 20px solid red;
+		}
+		.border-right{
+			border-right: 20px solid blue;
+		}
+		.border-bottom{
+			border-bottom: 40px solid green;
+		}
+		.border-left{
+			border-left: 20px solid orange;
+		}
+		.group{
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<span>四个边框均为黑色</span>
+		<div class='borders'></div>
+	</div>
+	<div>
+		<span>四个边框的颜色均不相同</span>
+		<div class='borders border-all'></div>
+	</div>
+	<div>
+		<span>分别为只有上右下左一个边框的div</span>
+		<div class='borders border-top'>上</div>
+		<div class='borders border-right'>右</div>
+		<div class='borders border-bottom'>下</div>
+		<div class='borders border-left'>左</div>
+	</div>
+	<div>
+		<span>分别两两组合的边框div</span>
+		<div class='group'><div class='borders border-top border-right'></div><span>上右</span></div>
+		<div class='group'><div class='borders border-top border-left'></div><span>上左</span></div>
+		<div class='group'><div class='borders border-bottom border-right'></div><span>下右</span></div>
+		<div class='group'><div class='borders border-bottom border-left'></div><span>下左</span></div>
+		<div class='group'><div class='borders border-top border-bottom'></div><span>上下</span></div>
+		<div class='group'><div class='borders border-right border-left'></div><span>左右</span></div>
+	</div>
+		<div>
+		<span>分别三个组合的边框div，其实就相当于没有包括的那部分</span>
+		<div class='borders border-top border-right border-left'></div><span>上左右</span>
+		<div class='borders border-right border-bottom border-left'></div><span>下左右</span>
+		<div class='borders border-top border-bottom border-right'></div><span>上下右</span>
+		<div class='borders border-top border-left border-bottom'></div><span>上下左</span>
+	</div>
+</body>
+</html>
