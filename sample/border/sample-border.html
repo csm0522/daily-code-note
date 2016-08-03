@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>sample border</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
+	<script src="js/jquery.js"></script>
+</head>
+<body>
+	<div class="head">
+		<h3>博客图片列表</h3>
+	</div>
+	<div class='body'>
+	<div class='title'>
+		<pre>
+		这是用css3和jq做的一个简易的图片选择时的高亮效果
+		1.当鼠标移到图片上时，会出现灰色遮罩以及折角效果
+		2.当点击时，会出现tips内容。
+		3.当点击其他的图片时，遮罩会消失。
+
+		ps：第一个遮罩为一个跳转的图标；第二个遮罩为纯文本。
+		</pre>
+	</div>
+		<div class="lists">
+			<div class="list">
+				<div class="tips">
+					<a href="https://www.baidu.com"><img src="img/fa-cameracolor.png"></a>
+				</div>
+				<img src="img/57a0676800013b2506000338.jpg" width="100%" height="100%">
+				<div class='borders'></div>
+			</div>
+
+			<div class="list">
+				<div class="tips">
+					<p>再次点击其他图片会重新出现</p>
+				</div>
+				<img src="img/576b4f800001f7f906000338.jpg" width="100%" height="100%">
+				<div class='borders'></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</body>
+	<script type="text/javascript">
+	
+		$('.list').click(function(e){
+			$(".borders").removeClass('onborder');
+			$(".tips").removeClass('showtip');
+			var borders = $(this).children('.borders');
+			var tips = $(this).children('.tips');
+			borders.toggleClass('onborder');
+			tips.toggleClass('showtip');
+		})
+	</script>
+</html>
