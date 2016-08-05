@@ -1,0 +1,227 @@
+@font-face
+{
+    font-family: '../font/webfont';
+
+    src: url('../font/webfont.eot'); /* IE9*/
+    src: url('../font/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/webfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+body,
+html
+{
+    height: 100%;
+}
+
+.web-font
+{
+    font-family: 'webfont' !important;
+    font-size: 16px;
+    font-style: normal;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header
+{
+    z-index: 10;
+
+    width: 100%;
+    min-width: 890px;
+    height: 80px;
+
+    background-color: #333;
+}
+.header .logo
+{
+    display: inline-block;
+
+    width: 200px;
+    height: 40px;
+    margin: 20px 20px 20px;
+
+    text-align: center;
+
+    border: 1px solid  #ff9400;
+}
+.header .loginbar
+{
+    line-height: 40px;
+
+    display: inline-block;
+    float: right;
+
+    width: 200px;
+    height: 40px;
+    margin: 20px 40px 20px;
+
+    text-align: center;
+
+    color: #ccc;
+    /*background-color: #4ac0ff;*/
+}
+.header .loginbar:after
+{
+    display: block;
+    visibility: hidden;
+    clear: both;
+
+    height: 0;
+
+    content: '';
+}
+.loginbar span
+{
+    margin: 0 5px ;
+}
+
+.body
+{
+    width: 100%;
+    height: 100%;
+}
+.sidebar
+{
+    display: inline-block;
+    float: left;
+
+    width: 30%;
+    min-width: 200px;
+    max-width: 250px;
+    height: 100%;
+
+    color: #ccc;
+    background-color: #333;
+}
+.sidebar .info
+{
+    padding-top: 10%;
+
+    text-align: center;
+}
+.sidebar .info .userTx
+{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+    background-color: #ff9400;
+}
+.lists
+{
+    margin-top: 20px;
+}
+.lists .list
+{
+    line-height: 40px;
+
+    display: inline-box;
+
+    width: 100%;
+    height: 40px;
+    padding: 6px 0;
+
+    transition: all .1s ease-in;
+    text-align: center;
+}
+/*悬停*/
+.list:hover
+{
+    background-color: #ff9400;
+}
+.list:hover .list-title
+{
+    color: white;
+}
+/*选中*/
+.onlist
+{
+    background-color:  #ff9400;
+}
+.onlist .list-title
+{
+    color: white;
+}
+.list-icon
+{
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+
+    vertical-align: top;
+}
+.list:nth-child(1) .list-icon
+{
+    background: url(../img/未读.png) 0 0 no-repeat;
+    background-size: cover;
+}
+.list:nth-child(2) .list-icon
+{
+    background: url(../img/已读.png) 0 0 no-repeat;
+    background-size: cover;
+}
+.list:nth-child(3) .list-icon
+{
+    background: url(../img/意见.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.list-title
+{
+    margin-bottom: 15px;
+
+    vertical-align: top;
+}
+.content
+{
+    float: right;
+
+    width: 75%;
+    min-width: 500px;
+    height: 85%;
+    margin-top: 20px;
+    margin-right: 50px;
+
+    border: 1px solid red;
+}
+.footer-spacer
+{
+    height: 40px;
+}
+.footer
+{
+    font-size: 14px;
+
+    z-index: 1;
+
+    width: 100%;
+    min-width: 890px;
+    height: 40px;
+    margin-top: -40px;
+
+    text-align: center;
+
+    color: #ccc;
+}
+.footer a
+{
+    color: #ccc;
+}
+.footer span
+{
+    margin: 0 20px;
+}
+.footer p
+{
+    margin: 0;
+}
+.clear
+{
+    clear: both;
+}

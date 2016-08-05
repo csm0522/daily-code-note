@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///Users/chenshaomin/Desktop/mail/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="./首页_files/reset.css">
+	<link rel="stylesheet" type="text/css" href="./首页_files/common.css">
+	<link rel="stylesheet" type="text/css" href="./首页_files/index.css">
+	<script src="./首页_files/jquery.js"></script></head>
+<body class="web-font">
+	<div class="header">
+		<div class="logo" style="color: white;"><span>bnuz- itc</span></div>
+		<div class="loginbar">
+				<span>1301050005</span>|<a href="file:///Users/chenshaomin/Desktop/mail/login.html"><span>退出</span></a>
+		</div>
+
+	</div>
+	<div class="body">
+		<div class="sidebar">
+			<div class="info">
+			<div class="userTx"></div>
+				<h3><span>欢迎你，</span><span>陈美丽</span></h3>
+				<p><span>2013级</span><span>数媒</span><span>1班</span></p>
+			</div>
+			<ul class="lists">
+				<li class="list"><span class="list-icon" onclick="function()"></span><span class="list-title">未读信息</span></li>
+				<li class="list"><span class="list-icon" onclick="function()"></span><span class="list-title">已读信息</span></li>
+				<li class="list"><span class="list-icon" onclick="function()"></span><span class="list-title">意见反馈</span></li>
+			</ul>
+		</div>
+		<div class="content">
+			
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="footer">
+		<p><a href="file:///Users/chenshaomin/Desktop/mail/index.html"><span>信息技术学院</span></a>|<a href="file:///Users/chenshaomin/Desktop/mail/index.html"><span>信息技术学院学工办</span></a></p>
+		<p>@版权所有 2016 信息技术学院学工办</p>
+	</div>
+
+<script type="text/javascript">
+$(document).load(function(){
+	var list = $('.list');
+	$(list[0]).addClass('onlist');
+})
+	$('.list').click(function(){
+		$('.list').removeClass('onlist');
+		$(this).toggleClass('onlist');
+	})
+</script>
+</body></html>

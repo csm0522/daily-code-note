@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.min.js"></script>
+</head>
+<body class='web-font'>
+	<div class="container">
+		<div class="info">
+			<h1>北京师范大学珠海分校</h1>
+			<p>信息技术学院通讯系统</p>
+		</div>
+		<div class="login-box">
+			<div id="user" class="sno">
+				<span>学号</span>
+				<input type="text" name=""></div>
+			<div id="pwd" class="sno">
+				<span>密码</span>
+				<input type="password" name="" value=""></div>
+			<div id="login" class="reversal-btn" onclick="">登录</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<p><a href=""><span>信息技术学院</span></a>|<a href=""><span>信息技术学院学工办</span></a></p>
+		<p>@版权所有 2016 信息技术学院数字媒体技术系</p>
+	</div>
+</body>
+	<script type="text/javascript">
+		$('#login').click(function(){
+			var user = $('#user').val();
+			var pwd = $('#pwd').val();
+			var datas = {
+				username:user,
+				pwd:pwd,
+			}
+			location.href="index.html";
+			// $.ajax({
+			// 	type: "get",
+			// 	// url: "ajTest.php",
+			// 	data: datas,
+			// 	success: function(){
+			// 		alert(datas);
+			// 	},
+			// 	error: function(){
+			// 		alert("怎么出错了呢");
+			// 	}
+			// });
+		});
+
+</script>
+</html>

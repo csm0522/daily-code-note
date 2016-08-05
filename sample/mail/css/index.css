@@ -1,0 +1,64 @@
+span{
+    color:#ccc;
+}
+.footer{
+	background-color: #333;
+	padding:20px 0px;
+}
+.content h2
+{
+    font-size: 30px;
+
+    margin: 0 0 20px 30px;
+}
+/*table cell*/
+.cell
+{
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+/*分类*/
+.cell1{
+	width: 15%;
+    min-width: 100px;
+}
+/*编号*/
+.cell2{
+	width: 10%;
+    min-width: 50px;
+}
+/*标题*/
+.cell3{
+	width: 50%;
+    min-width: 500px;
+}
+/*时间*/
+.cell4{
+	width: 10%;
+    min-width: 200px;
+}
+/*加粗*/
+.cellb{
+    font-size: 16px;
+}
+
+.golink{
+	display: inline-block;
+	width: 80%;
+	height: 30px;
+}
+.gobtn{
+	width: 60%;
+	height: 30px;
+	margin:auto;
+	line-height: 30px;
+	border-radius: 10px;
+	border:1px solid #ff9400;
+	color:#ff9400;
+	transition: all 0.2s ease-in;
+}
+.gobtn:hover{
+	background-color: #ff9400;
+	color:white;
+}
