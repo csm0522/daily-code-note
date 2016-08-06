@@ -22,7 +22,18 @@
 		</div>
 
 	</div>
+
 	<div class="body web-font">
+	<!-- 灰色遮罩层 -->
+	<div class="mask">
+		<div class='tips'>
+			<h2>注意</h2>
+			<p>请仔细认真阅读本公告或通知。</p>
+			<p></p>
+		</div>
+		<div class="sub-btn" id="sub-btn">确定</div>
+	</div>
+
 		<div class="sidebar">
 			<div class="info">
 				<div class='userTx'></div>
@@ -73,6 +84,7 @@
 			<div class="clear"></div>
 		</div>
 		<hr>
+
 		<div class="text-body">
 			<p>
 				在听取党小组和党员、群众意见的基础上，经支部委员会审查，拟将谢鹏生等同志转为中共正式党员。根据发展党员工作有关要求，现将其有关情况公示如下：
@@ -86,28 +98,33 @@
 2016年5月18日
 			</p>
 		</div>
+		
 	</div>
 </div>
 <div class='clear'></div>
 <div class="footer">
 	<div class="body">
-	<p>
-		<a href="">
-			<span>信息技术学院</span>
-		</a>
-		|
-		<a href="">
-			<span>信息技术学院学工办</span>
-		</a>
-	</p>
-	<p>@版权所有 2016 信息技术学院数字媒体技术系</p>
-	</div>	
+		<p>
+			<a href="">
+				<span>信息技术学院</span>
+			</a>
+			|
+			<a href="">
+				<span>信息技术学院学工办</span>
+			</a>
+		</p>
+		<p>@版权所有 2016 信息技术学院数字媒体技术系</p>
+	</div>
 </div>
 </body>
 <script type="text/javascript">
+		
 		$('.list').click(function(){
 			$('.list').removeClass('onlist');
 			$(this).toggleClass('onlist');
+		})
+		$('#sub-btn').click(function(){
+			$('.mask').addClass('hiden');
 		})
 	</script>
 </html>

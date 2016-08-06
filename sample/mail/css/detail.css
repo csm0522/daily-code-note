@@ -1,42 +1,96 @@
-.footer{
-	background-color: #333;
-	padding:20px 0px;
-}
-.maintitle 
+.footer
 {
-    margin-left:  30px;
-    
+    padding: 20px 0;
+
+    background-color: #333;
 }
-.maintitle h2{
-	display: inline-block;
-	font-size: 30px;
-	margin-left:10px;
+.maintitle
+{
+    margin-left: 30px;
 }
-.maintitle .tag{
-	vertical-align: top;
-	margin-left: 10px;
-	margin-top: 10px;
+.maintitle h2
+{
+    font-size: 30px;
+
+    display: inline-block;
+
+    margin-left: 10px;
+}
+.maintitle .tag
+{
+    margin-top: 10px;
+    margin-left: 10px;
+
+    vertical-align: top;
 }
 .subtitle
 {
-	position: relative;
+    font-size: 14px;
     line-height: 40px;
+
+    position: relative;
 
     width: 100%;
     height: 40px;
+    padding-bottom: 10px;
     padding-left: 30px;
-    padding-bottom:10px; 
 
-    font-size: 14px;
-    color:#666;
+    color: #666;
 }
-.depart{
-	margin-left: 20px;
+.depart
+{
+    margin-left: 20px;
 }
-.dtime{
-position: absolute;
-right:40px;
+.dtime
+{
+    position: absolute;
+    right: 80px;
 }
-.text-body{
-	padding: 30px;
+.text-body
+{
+    padding: 30px;
+}
+.mask
+{
+    position: absolute;
+    z-index: 10;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,.75);
+}
+.sub-btn
+{
+    line-height: 30px;
+
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+
+    width: 100px;
+    height: 30px;
+
+    text-align: center;
+
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.hiden
+{
+    display: none;
+}
+.tips
+{
+    position: absolute;
+    top: 100px;
+    left: 300px;
+	
+    color: #ccc;
+}
+.tips h2{
+	font-size: 32px;
 }
