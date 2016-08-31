@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>test</title>
+    <style type="text/css">
+        .bubble {
+            position: relative;
+            background-color: #33AAEE;
+            width: 10rem;
+            height: 3rem;
+            font-size: 2rem;
+            line-height: 3rem;
+            color: #FFF;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .bubble:before {
+            position: absolute;
+            content: "";
+            right: 100%;
+            top: 1rem;
+            width: 0;
+            height: 0;
+            border : 0.6rem solid transparent;
+            border-right: 0.6rem solid #33AAEE;
+        }
+
+        .bubble .text {
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+<div class='bubble'>
+    <p class="text"></p>
+</div>
+</body>
+</html>

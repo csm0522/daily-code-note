@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+.biger{width: 70%;height:200px;margin: 10px auto;text-align:center;line-height:200px;background-color:ghostwhite;}
+.biger h1{
+    font-size:20px;
+}
+/*上面的内、外阴影*/
+.curve-shadow{
+    position: relative;
+    box-shadow: 0 0 5px 5px #cccccc inset,0px 1px 40px rgba(0,0,0,0.3);
+    font-size:16px;
+}
+/*上面的曲线投影,两个阴影重叠在一起为了让他看起来更真实*/
+.curve-shadow:after,.curve-shadow:before{
+    position: absolute;
+    /*因为没有宽高所以需要4个方向均有的情况下才会出现,相当于两两决定了宽和高*/
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    z-index:-1;
+    content:"";
+    background-color:red;
+    /*表示用水平方向的半径和水平半径,和空格的意义不一样。一定要用斜杠*/
+    border-radius: 100px/20px;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+ul{
+    width: 80%;
+    margin: 20px auto;
+}
+.small{
+    position:relative;
+    float:left;
+    width:28%;
+    height:200px;
+    line-height: 200px;
+    margin:10px 20px;
+    list-style:none;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4),0 0 60px rgba(0,0,0,0.1) inset;
+}
+.small img{
+    display: block;
+    margin: 30px auto;
+}
+
+.small:before{
+   /*如果没有content则不会出现伪类选择器 */
+    content:"";
+    position:absolute;
+    width: 90%;
+    height: 80%;
+    bottom:8px;
+    left: 18px;
+    background-color:transparent;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.27);
+    transform: skew(-10deg) rotate(-5deg);
+    z-index:-1;
+}
+.small:after{
+    /*如果没有content则不会出现伪类选择器 */
+    content:"";
+    position:absolute;
+    width: 90%;
+    height: 80%;
+    bottom: 8px;
+    left: 18px;
+    background-color:transparent;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.27);
+    transform: skew(10deg) rotate(5deg);
+    z-index:-1;
+}
