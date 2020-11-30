@@ -1,7 +1,5 @@
 # vue-simple-project
 
-> 这是我的第一个vue.js,一直在纠缠于angular和nodejs,无意中发现了vuejs,轻量级,入手试试看。
-
 ## Build Setup
 
 ``` bash
